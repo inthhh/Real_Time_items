@@ -15,7 +15,7 @@ fetch(apiUrl)
   })
   .then((data) => {
     console.log(data);
-    cityNameEl.innerHTML = data.name;
+    cityNameEl.innerHTML = `현재 ${data.name} 의 날씨는`;
     tempEl.innerHTML = `${Math.round(data.main.temp)}°C`;
     weatherDescEl.innerHTML = data.weather[0].description;
 

@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Humanbumsuk";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background: #d5e8f7;
   font-family: Arial, sans-serif;
@@ -9,34 +16,34 @@ body {
 }
 
 .timeContainer {
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   color: rgb(91, 91, 91);
 }
 
 .WeatherContainer {
+  font-family: "Humanbumsuk";
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  border-radius: 10px;
+  padding: 30px;
+  border-radius: 12px;
   text-align: center;
 }
 
 .city-name {
   font-size: 36px;
-  margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .temp {
   font-size: 72px;
-  margin: 0;
+  padding: 20px;
+  margin: 0px;
 }
 
 .weather-desc {
   font-size: 24px;
   margin: 0;
-  margin-top: 20px;
   color: #999;
 }
 .top {
@@ -48,7 +55,6 @@ body {
 .weather-icon {
   font-size: 72px;
   margin: 0;
-  margin-bottom: 10px;
 }
 
 .piano {
@@ -80,4 +86,91 @@ body {
   background-color: black;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.pollen {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(251, 175, 234);
+  width: 850px;
+  height: 850px;
+  animation: pollen-movement 12s ease-in-out infinite;
+  z-index: -10;
+  opacity: 0.4;
+}
+
+@keyframes pollen-movement {
+  0% {
+    transform: translate(-30%, -90%) rotate(0deg);
+  }
+  25% {
+    transform: translate(70%, 80%) rotate(180deg);
+  }
+  50% {
+    transform: translate(50%, -80%) rotate(360deg);
+  }
+  75% {
+    transform: translate(-80%, 70%) rotate(540deg);
+  }
+  100% {
+    transform: translate(-30%, -90%) rotate(720deg);
+  }
+}
+
+.pollen2 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(238, 198, 205);
+  width: 670px;
+  height: 670px;
+  animation: pollen-movement2 12s ease-in-out infinite;
+  z-index: -10;
+  opacity: 0.4;
+}
+
+@keyframes pollen-movement2 {
+  0% {
+    transform: translate(100%, 90%) rotate(0deg);
+  }
+  25% {
+    transform: translate(100%, -60%) rotate(180deg);
+  }
+  50% {
+    transform: translate(-100%, 70%) rotate(360deg);
+  }
+  75% {
+    transform: translate(-60%, -40%) rotate(540deg);
+  }
+  100% {
+    transform: translate(100%, 90%) rotate(720deg);
+  }
+}
+
+.pollen3 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(145, 213, 206);
+  width: 900px;
+  height: 900px;
+  animation: pollen-movement3 12s ease-in-out infinite;
+  z-index: -10;
+  opacity: 0.4;
+}
+
+@keyframes pollen-movement3 {
+  0% {
+    transform: translate(-50%, -60%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-100%, 0%) rotate(180deg);
+  }
+  50% {
+    transform: translate(80%, 70%) rotate(360deg);
+  }
+  75% {
+    transform: translate(30%, -20%) rotate(540deg);
+  }
+  100% {
+    transform: translate(-50%, -60%) rotate(720deg);
+  }
 }
