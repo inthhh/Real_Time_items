@@ -2,21 +2,43 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Weather App</title>
+    <title>Real Time App</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/" />
   </head>
   <body>
-    <div class="timeContainer">
-      <span id="clock" style="font-size: 100px">clock</span>
-      <span id="apm" style="font-size: 50px">pm</span>
-    </div>
-    <div class="WeatherContainer">
-      <h1 class="city-name">City Name</h1>
-      <div class="weather-box">
-        <h3 class="temp"></h3>
-        <p class="weather-desc"></p>
-        <div class="weather-icon"></div>
+    <div class="top">
+      <div class="timeContainer">
+        <span id="clock" style="font-size: 100px">clock</span>
+        <span id="apm" style="font-size: 50px">pm</span>
+      </div>
+      <div class="WeatherContainer">
+        <h1 class="city-name">City Name</h1>
+        <div class="weather-box">
+          <h3 class="temp"></h3>
+          <p class="weather-desc"></p>
+          <div class="weather-icon"></div>
+        </div>
+      </div>
+
+      <div class="piano" style="position: relative">
+        <div class="key white-key" id="C"></div>
+        <div class="key white-key" id="D"></div>
+        <div class="key white-key" id="E"></div>
+        <div class="key white-key" id="F"></div>
+        <div class="key white-key" id="G"></div>
+        <div class="key white-key" id="A"></div>
+        <div class="key white-key" id="B"></div>
+        <div class="key white-key" id="C2"></div>
+        <div style="margin-right: 210px; position: absolute">
+          <div class="key black-key" id="C#"></div>
+          <div class="key black-key" id="D#"></div>
+        </div>
+        <div style="margin-left: 85px; position: absolute">
+          <div class="key black-key" id="F#"></div>
+          <div class="key black-key" id="G#"></div>
+          <div class="key black-key" id="A#"></div>
+        </div>
       </div>
     </div>
     <script src="wAPI.js"></script>

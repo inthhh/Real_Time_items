@@ -65,3 +65,27 @@ function clock() {
 }
 clock();
 setInterval(clock, 1000); // 1초마다 실행
+
+const keys = document.querySelectorAll(".key");
+const notes = {
+  C: "pianoSound/FX_piano01.mp3",
+  "C#": "pianoSound/FX_piano02.mp3",
+  D: "pianoSound/FX_piano03.mp3",
+  "D#": "pianoSound/FX_piano04.mp3",
+  E: "pianoSound/FX_piano05.mp3",
+  F: "pianoSound/FX_piano06.mp3",
+  "F#": "pianoSound/FX_piano07.mp3",
+  G: "pianoSound/FX_piano08.mp3",
+  "G#": "pianoSound/FX_piano09.mp3",
+  A: "pianoSound/FX_piano10.mp3",
+  "A#": "pianoSound/FX_piano11.mp3",
+  B: "pianoSound/FX_piano12.mp3",
+  C2: "pianoSound/FX_piano13.mp3",
+};
+
+keys.forEach((key) => {
+  key.addEventListener("click", () => {
+    const note = new Audio(notes[key.id]);
+    note.play();
+  });
+});

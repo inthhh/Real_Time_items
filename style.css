@@ -39,9 +39,45 @@ body {
   margin-top: 20px;
   color: #999;
 }
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .weather-icon {
   font-size: 72px;
   margin: 0;
   margin-bottom: 10px;
+}
+
+.piano {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 200px;
+}
+
+.key {
+  width: 40px;
+  height: 200px;
+  margin: 0;
+  border: 1px solid rgb(88, 88, 88);
+  border-radius: 8px;
+  float: left;
+}
+
+.white-key {
+  background-color: white;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.black-key {
+  width: 30px;
+  height: 120px;
+  background-color: black;
+  margin-left: 5px;
+  margin-right: 5px;
 }
